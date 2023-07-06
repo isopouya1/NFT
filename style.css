@@ -87,6 +87,7 @@ p{
     border: none;
     border-radius: 10px;
     font-weight: 600;
+    transition: all 1s;
 }
 .more{
     width: 150px;
@@ -96,13 +97,25 @@ p{
     border: 2px solid white;
     border-radius: 10px;
     font-weight: 600;
+    transition: all 1s;
 }
 ul{
     display: none;
 }
 .login{
     display: none;
+    transition: all 1s;
 }
+.buy:hover{
+    transform: scale(1.1);
+}
+.login:hover{
+    transform: scale(1.1);
+}
+.more:hover{
+    transform: scale(1.1);
+}
+
 @media only screen and (min-width:900px){
     main{
         max-width: 1000px;
@@ -113,7 +126,7 @@ ul{
     ul{
         display: flex;
         gap: 30px;
-        color: white;
+        color: rgb(212, 212, 212);
         list-style-type: none;
     }
     .login{
@@ -137,5 +150,10 @@ ul{
     }
     .main-content p{
         max-width: 300px;
+    }
+    li:hover{
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
     }
 }

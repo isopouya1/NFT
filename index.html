@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="style.css">
     <title>NFTYOU</title>
 </head>
@@ -14,38 +15,40 @@
 <body>
     <main>
         <header>
-            <h1 class="logo">NFTYOU</h1>
-            <div class="humber-menu">
+            <h1 class="logo" data-aos="fade-right">NFTYOU</h1>
+            <div class="humber-menu" data-aos="fade-left">
                 <hr class="one">
                 <hr class="two">
                 <hr class="three">
             </div>
-            <ul>
+            <ul data-aos="fade">
                 <li>Home</li>
                 <li>About</li>
                 <li>Shop</li>
                 <li>Gallery</li>
             </ul>
-            <button class="login">Login</button>
+            <button class="login"  data-aos="fade-left">Login</button>
         </header>
         <section class="main-content">
-            <img src="assets/Hero.png" alt="">
+            <img src="assets/Hero.png" alt="" data-aos="fade-up">
             <div class="txt">
-                <h1 class="title">
+                <h1 class="title" data-aos="fade-right">
                     Koala
                     <span>Intelligence</span>
                     Agency
                 </h1>
-                <p>
+                <p data-aos="fade-right">
                     A collection of 10,000 worldly Koalas each with their unique skillsets. Their
                 </p>
                 <div class="btns">
-                    <button class="buy" type="button">Buy now</button>
-                    <button class="more" type="button">More</button>
+                    <button class="buy" type="button" >Buy now</button>
+                    <button class="more" type="button" >More</button>
                 </div>
             </div>
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
