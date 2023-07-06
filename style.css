@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+:root{
+    --bg : #181818;
+    --green : #02C173 ;
+}
+body{
+    background-color: var(--bg);
+}
+main{
+    max-width: 350px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+}
+.humber-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    cursor: pointer;
+}
+.humber-menu .one{
+    width: 15px;
+    height: 3px;
+    background-color: white;
+}
+.humber-menu .two{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+.humber-menu .three{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+}
+.main-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.main-content img{
+    width: 100%;
+}
+.title{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 3px;
+}
+.title span{
+    color: var(--green);
+}
+p{
+    color: #858585;
+    font-weight: 500;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.btns{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.buy{
+    width: 150px;
+    height: 50px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.more{
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: 600;
+}
+ul{
+    display: none;
+}
+.login{
+    display: none;
+}
+@media only screen and (min-width:900px){
+    main{
+        max-width: 1000px;
+    }
+    .humber-menu{
+        display: none;
+    }
+    ul{
+        display: flex;
+        gap: 30px;
+        color: white;
+        list-style-type: none;
+    }
+    .login{
+        display: inline;
+        width: 120px;
+        height: 40px;
+        background-color: var(--green);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+    .main-content img{
+        width: 400px;
+    }
+    .main-content{
+        flex-direction: row-reverse;
+    }
+    .main-content .title{
+        font-size: 60px;
+    }
+    .main-content p{
+        max-width: 300px;
+    }
+}
